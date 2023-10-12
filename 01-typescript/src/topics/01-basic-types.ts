@@ -9,6 +9,4 @@ console.log({
     name, full, isAlive, variable
 })
 
-const gitPrueba: string = "Prueba";
-console.log(gitPrueba)
 export {}
