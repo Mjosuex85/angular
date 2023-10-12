@@ -1,0 +1,7 @@
+<h1> {{title}} </h1>
+<h3> Counter: {{counter}} </h3>
+
+<button (click)="increaseBy('decrement')" [disabled]="disabled"> -1 </button>
+<button (click)="reset()">Reset</button>
+<button (click)="increaseBy('increment')"> +1 </button>
+
