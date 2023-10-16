@@ -18,11 +18,10 @@ export class AddCharacterComponent  {
 
   emmitCharacter(): void {
 
-    if(this.character.name.length === 0) alert("Agrege un nombre")
+    if(this.character.name.length === 0) return
 
     else {
       this.onNewCharacter.emit(this.character)
-      alert(`Se agregró a ${this.character.name} a la lista`)
     }
 
     this.character = {name: '', power: 0}
