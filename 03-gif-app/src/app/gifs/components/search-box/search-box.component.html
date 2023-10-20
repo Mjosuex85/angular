@@ -1,0 +1,22 @@
+<h5>Buscar:</h5>
+
+<div class="d-flex">
+
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Buscar gif..."
+    (keyup.enter)="searchTag()"
+    #textTagInnput
+    >
+
+    <button class="btn btn-primary ml-2" (click)="searchTag()"> Buscar </button>
+</div>
+
+
+  <span *ngIf="forbidden.length > 0"> {{forbidden}}</span>
+
+
+
+
+

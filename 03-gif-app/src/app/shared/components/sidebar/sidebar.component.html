@@ -1,0 +1,21 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+
+  <div class="d-flex">
+    <h3 class="text-light pr-2">GifApps</h3>
+
+    <button class="btn btn-primary ml-3 p-1" (click)="cleanHistory()">
+
+      Clean History
+    </button>
+
+  </div>
+
+  <hr class="text-light">
+
+  <div class="list-group list-reset p-2">
+    <button *ngFor="let tag of tags" class="list-group-item list-group-item-action mt-2">
+      {{tag | titlecase}}
+    </button>
+  </div>
+
+</div>
