@@ -11,17 +11,19 @@ export class SideBarComponent {
 
   public gifHistory: string[] = []
 
-  constructor(private gifservice: GifService) {
-  }
+  constructor(private gifservice: GifService) {}
 
   get tags(): string[] {
-
-    this.gifHistory= [...this.gifservice.tagsHistory]
+    this.gifHistory = [...this.gifservice.tagsHistory]
     return this.gifHistory
   }
 
-  cleanHistory() {
+  cleanHistory(): void {
     this.gifservice.cleaHistory()
+  }
+
+  searchByTagHistory(tag: string):void {
+    this.gifservice.searchTag(tag)
   }
 
 }

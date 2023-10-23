@@ -1,15 +1,13 @@
 <div class="row" id="main">
+  <div *ngFor="let gif of gifs"  id="submain" class="col-md-3 col-sm-6">
 
-  <div id="submain" class="col-md-3 col-sm-6">
+    <div  class="card mb-2 text-center bg-dark">
 
-    <div class="card mb-2 text-center bg-dark">
-
-      <!-- <img src="https://media.primicias.ec/2023/10/17175136/Yeferson-Soteldo-.jpg"> -->
+      <img src={{gif.images.downsized_medium.url}} alt="">
 
       <div class="card-body text-white">
-        <p class="">
-            Gif card Here
-        </p>
+        <h6> {{gif.title}} </h6>
+
       </div>
 
     </div>
