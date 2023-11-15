@@ -1,0 +1,15 @@
+
+<div class="d-flex">
+
+  <input
+  type="text"
+  class="form-control"
+  [placeholder]="placeholder"
+  #txtInput
+  (keyup.enter)="emitSearchValue(txtInput.value)"
+  >
+
+  <button (click)="emitSearchValue(txtInput.value)" class="btn btn-primary searchBtn"> Search.. </button>
+
+</div>
+
